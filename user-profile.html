@@ -1,0 +1,241 @@
+<html>
+
+<head>
+<title>web page</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+<meta name"viewport" size="width=width-deviceWidth,initial-scale=1.0"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!--font awesome icons-->
+<script src="https://kit.fontawesome.com/33c08b8109.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+  /*for dropdown menues*/
+$(document).ready(function(){
+  $('#item1').on("click", function(e){
+    $(this).next('div').toggle();
+    $('#level_2in2_drop').css('display','none');
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+
+$(document).ready(function(){
+  $('#item2').on("click", function(e){
+    $(this).next('div').toggle();
+    $('#level_1in2_drop').css('display','none');
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+
+
+
+</script>
+
+
+<style type="text/css">
+  body{
+  margin:0px;
+}
+
+.menu{
+  width:100%;
+  background-color:cyan;
+  text-align:left;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1000;
+}
+.content{
+  margin-top: 100px;
+  width:100%;
+  //height: 100%;
+  
+  
+}
+@media(max-width: 500px){
+  .content{
+  height: 100%; 
+  
+  }
+  .footer{
+    position:fixed;
+    bottom:0px;
+  }
+}
+.footer{
+  width:100%;
+  background-color:#0E1E24;
+  clear:both;
+  color:silver;
+  padding: 30px;
+}
+.footer ul{
+  list-style: none;
+}
+
+.footer ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer ul li a{
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="menu" >
+  <nav class="navbar navbar-expand-md navbar-light" id="nav-bar">
+  
+    <!--nav bar button ,brand :25E6BA , BG : 3b5998-->
+    <a href=""><img class="logo" src="logo.png"></a> 
+        <a href="#" class="navbar-brand " id="navbar-brand-cust">BlueCarpt</a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+    <!--nav bar lists-->          
+        <div id="navbarCollapse" class="collapse navbar-collapse" style="background-color:#008080 ;">
+            <ul class="nav navbar-nav ml-auto">
+                <li>
+                  <a href="user-home.html" class="nav-link" id="nav_lists">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="nav_lists">Our services</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item" style="cursor:not-allowed;">
+                          <span >Banqute halls</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Function halls</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#"class="dropdown-item">Convention halls</a>
+                    </div>
+                </li>
+            
+                <li class="nav-item dropdown">
+                  <!--level 1 drop dowm-->
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="nav_lists">We Support</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a tabindex="-1" href="#" class="dropdown-item dropdown-toggle" id="item1" data-toggle="dropdown">College events</a>
+                        <!--level 2.1 drop dowm-->
+                            <div class="dropdown-menu dropdown-menu " id="level_1in2_drop">
+                              <a href="#"class="dropdown-item">Fest</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">MUN</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Cultural Events</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">DJ Events</a>
+                             
+                            </div>  
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-toggle" id="item2" data-toggle="dropdown">Other events</a>
+                        <!--level 2.1 drop dowm-->
+                            <div class="dropdown-menu dropdown-menu " id="level_2in2_drop">
+                              <a href="#"class="dropdown-item">holi fest</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Kite Festival</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Dandia</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Dussera Events</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Eco-friendly Events</a>
+                            </div>
+
+                       
+                    </div>
+                </li>
+
+                <li>
+                  <a href="#footer" class="nav-link" id="nav_lists">contact us</a>
+                </li>
+                <a href="user-profile.html" class="nav-link" id="nav_lists"><i id="profile_icon" class="fas fa-user-circle"></i></a>
+               
+               
+            </ul>
+        </div>
+    
+  
+  </div>
+    
+</nav>
+
+<div class="content">
+        <div class="container" id="x">
+          <div class="row">
+            <div class="leftside " style="padding:0px;" >
+              <ul class="navbar-nav">       
+                    <a href="" class=""><li class="" style="border-left:3px solid black;font-weight:bold;    background-image: linear-gradient(rgba(0,0,0,0.07),rgba(0,0,0,0.07));">Profile</li></a>
+                    <a href="" class=""><li class="">Edit Profile</li></a>
+                    <a href="" class=""><li class="">Change Password</li></a>
+                    <a href="index.html" class=""><li class="">Logout</li></a>         
+              </ul>
+              
+            </div>
+
+            <div class="  rightside ">
+              <table id="y" align=center>
+                <tr>
+                <td>Name &nbsp &nbsp &nbsp &nbsp</td> 
+                <td><input type="text" size="30" class="form-control" name="name"  readonly="readonly" required></td>
+                </tr>
+                <tr>
+                <td>Username &nbsp &nbsp &nbsp &nbsp</td> 
+                <td><input type="text" size="30" class="form-control" name="uname"  readonly="readonly" required></td>
+                </tr>
+                <tr>
+                <td>Mobile number &nbsp &nbsp &nbsp &nbsp</td> 
+                <td><input type="text" name="mob" size="30" class="form-control"  readonly="readonly" required></td>
+                </tr>
+                <tr>
+                <td>Email-Id &nbsp &nbsp &nbsp &nbsp</td> 
+                <td><input type="text" name="mail" size="30" class="form-control"  readonly="readonly" required></td>
+                </tr>
+                <tr>
+                <td>Gender &nbsp &nbsp &nbsp &nbsp</td> 
+                <td><input type="text" name="g" required class="form-control"  readonly="readonly" size="30"></td>
+                </tr>
+                <tr>
+                <td>Area &nbsp &nbsp &nbsp &nbsp</td> 
+                <td><input type="text" name="area" required class="form-control"  readonly="readonly" size="30"></td>
+                </tr><tr>
+                <td>Address &nbsp &nbsp &nbsp &nbsp</td> 
+                <td><input type="text" name="add" required class="form-control"  readonly="readonly" size="30"></td>
+                </tr>
+              </table>
+              
+
+            </div>
+          </div>
+        </div>
+</div>
+
+
+<div class="footer" id="footer">  
+  <div>&copy; 2020 BlueCarpt </div><br>
+  <div class="contact-us">  
+      
+  </div>
+  <div>follow us on
+      <ul>
+        <li><a href="">Instagram <i class="fab fa-instagram"></i></a></li>  
+        <li><a href="">Twitter <i class="fab fa-twitter"></i></a></li>
+        <li><a href="">Facebook <i class="fab fa-facebook-f"></i></a></li>
+      </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

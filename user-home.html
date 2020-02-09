@@ -1,0 +1,383 @@
+<html>
+
+<head>
+<title>web page</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+<meta name"viewport" size="width=width-deviceWidth,initial-scale=1.0"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+<!--font awesome icons-->
+<script src="https://kit.fontawesome.com/33c08b8109.js" crossorigin="anonymous"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+  /*for dropdown menues*/
+$(document).ready(function(){
+  $('#item1').on("click", function(e){
+    $(this).next('div').toggle();
+    $('#level_2in2_drop').css('display','none');
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+
+$(document).ready(function(){
+  $('#item2').on("click", function(e){
+    $(this).next('div').toggle();
+    $('#level_1in2_drop').css('display','none');
+    e.stopPropagation();
+    e.preventDefault();
+  });
+});
+
+
+
+</script>
+
+
+<style type="text/css">
+  body{
+  margin:0px;
+}
+
+.menu{
+  width:100%;
+  background-color:cyan;
+  text-align:left;
+  position: fixed;
+  top:0;
+  left: 0;
+  z-index: 1000;
+}
+.content{
+  margin-top: 100px;
+  width:100%;
+  //height: 100%;
+  
+  
+}
+@media(max-width: 500px){
+  .content{
+  height: 100%; 
+  
+  }
+  .footer{
+    position:fixed;
+    bottom:0px;
+  }
+}
+.footer{
+  width:100%;
+  background-color:#0E1E24;
+  clear:both;
+  color:silver;
+  padding: 30px;
+}
+.footer ul{
+  list-style: none;
+}
+
+.footer ul li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.footer ul li a{
+  text-decoration: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="menu" >
+  <nav class="navbar navbar-expand-md navbar-light" id="nav-bar">
+  
+    <!--nav bar button ,brand :25E6BA , BG : 3b5998-->
+    <a href=""><img class="logo" src="logo.png"></a> 
+        <a href="#" class="navbar-brand " id="navbar-brand-cust">BlueCarpt</a>
+              <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse" >
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+    <!--nav bar lists-->          
+        <div id="navbarCollapse" class="collapse navbar-collapse" style="background-color:#008080 ;">
+            <ul class="nav navbar-nav ml-auto">
+                <li>
+                  <a href="user-home.html" class="nav-link" id="nav_lists">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="nav_lists">Our services</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item" style="cursor:not-allowed;">
+                          <span >Banqute halls</span></a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">Function halls</a>
+                        <div class="dropdown-divider"></div>
+                        <a href="#"class="dropdown-item">Convention halls</a>
+                    </div>
+                </li>
+            
+                <li class="nav-item dropdown">
+                  <!--level 1 drop dowm-->
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="nav_lists">We Support</a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a tabindex="-1" href="#" class="dropdown-item dropdown-toggle" id="item1" data-toggle="dropdown">College events</a>
+                        <!--level 2.1 drop dowm-->
+                            <div class="dropdown-menu dropdown-menu " id="level_1in2_drop">
+                              <a href="#"class="dropdown-item">Fest</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">MUN</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Cultural Events</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">DJ Events</a>
+                             
+                            </div>  
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item dropdown-toggle" id="item2" data-toggle="dropdown">Other events</a>
+                        <!--level 2.1 drop dowm-->
+                            <div class="dropdown-menu dropdown-menu " id="level_2in2_drop">
+                              <a href="#"class="dropdown-item">holi fest</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Kite Festival</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Dandia</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Dussera Events</a>
+                              <div class="dropdown-divider"></div>
+                              <a href="#"class="dropdown-item">Eco-friendly Events</a>
+                            </div>
+
+                       
+                    </div>
+                </li>
+
+                <li>
+                  <a href="#footer" class="nav-link" id="nav_lists">contact us</a>
+                </li>
+                <a href="user-profile.html" class="nav-link" id="nav_lists"><i id="profile_icon" class="fas fa-user-circle"></i></a>
+               
+               
+            </ul>
+        </div>
+    
+  
+  </div>
+    
+</nav>
+
+<div class="content">
+    <div class="search">
+          <i class="fas fa-search"></i>
+          <input type="text" name="search" placeholder="Search Area" >
+          <button class="btn btn-success btn-sm btn">Search</button>
+    </div>
+    <div class="halls">
+          <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12 mt-3">
+                      <div class="card">
+                          <div class="card-horizontal">
+                              <div class="img-square-wrapper">
+                                  <img class="image" src="hall2.jpg" alt="Card image cap">
+                              </div>
+                              <div class="card_body">
+                                  <h4 class="card-title">Anjana Gardens</h4>
+                                  <p class="card-text">
+                                      <i class="fas fa-location-arrow"></i> Shivaji nagar , Uppal , Hyderabad-500039<br>
+                                      <i class="fas fa-rupee-sign"></i>  50,000/-<br>
+                                      Veg & Non-Veg <br>
+                                      AC & Non-AC
+                                  </p>
+                              </div>
+                              <div class="card-buttons">
+                                      <a href="hall-view.html"><button class="btn btn-success">View More</button></a>
+                                      <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal"><button class="btn btn-success">Book Slot</button></a>
+                              </div>
+                          </div>
+                          <div class="card-footer">
+                              <small class="text-muted">
+                                  Last updated Date: <span id="date"></span>
+                                               Time: <span id="time"></span>
+                              </small>
+                          </div>
+                          
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+                    <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12 mt-3">
+                      <div class="card">
+                          <div class="card-horizontal">
+                              <div class="img-square-wrapper">
+                                  <img class="image" src="hall3.jpg" alt="Card image cap">
+                              </div>
+                              <div class="card_body">
+                                  <h4 class="card-title">Anjana Gardens</h4>
+                                  <p class="card-text">
+                                      <i class="fas fa-location-arrow"></i> Shivaji nagar , Uppal , Hyderabad-500039<br>
+                                      <i class="fas fa-rupee-sign"></i>  50,000/-<br>
+                                      Veg & Non-Veg <br>
+                                      AC & Non-AC
+                                  </p>
+                              </div>
+                              <div class="card-buttons">
+                                      <a href="hall-view.html"><button class="btn btn-success">View More</button></a>
+                                      <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal"><button class="btn btn-success">Book Slot</button></a>
+                              </div>
+                          </div>
+                          <div class="card-footer">
+                              <small class="text-muted">
+                                  Last updated Date: <span id="date"></span>
+                                               Time: <span id="time"></span>
+                              </small>
+                          </div>
+                          
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+                    <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12 mt-3">
+                      <div class="card">
+                          <div class="card-horizontal">
+                              <div class="img-square-wrapper">
+                                  <img class="image" src="hall4.jpg" alt="Card image cap">
+                              </div>
+                              <div class="card_body">
+                                  <h4 class="card-title">Anjana Gardens</h4>
+                                  <p class="card-text">
+                                      <i class="fas fa-location-arrow"></i> Shivaji nagar , Uppal , Hyderabad-500039<br>
+                                      <i class="fas fa-rupee-sign"></i>  50,000/-<br>
+                                      Veg & Non-Veg <br>
+                                      AC & Non-AC
+                                  </p>
+                              </div>
+                              <div class="card-buttons">
+                                      <a href="hall-view.html"><button class="btn btn-success">View More</button></a>
+                                      <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal"><button class="btn btn-success">Book Slot</button></a>
+                              </div>
+                          </div>
+                          <div class="card-footer">
+                              <small class="text-muted">
+                                  Last updated Date: <span id="date"></span>
+                                               Time: <span id="time"></span>
+                              </small>
+                          </div>
+                          
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+                    <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12 mt-3">
+                      <div class="card">
+                          <div class="card-horizontal">
+                              <div class="img-square-wrapper">
+                                  <img class="image" src="hall4.jpg" alt="Card image cap">
+                              </div>
+                              <div class="card_body">
+                                  <h4 class="card-title">Anjana Gardens</h4>
+                                  <p class="card-text">
+                                      <i class="fas fa-location-arrow"></i> Shivaji nagar , Uppal , Hyderabad-500039<br>
+                                      <i class="fas fa-rupee-sign"></i>  50,000/-<br>
+                                      Veg & Non-Veg <br>
+                                      AC & Non-AC
+                                  </p>
+                              </div>
+                              <div class="card-buttons">
+                                      <a href="hall-view.html"><button class="btn btn-success">View More</button></a>
+                                      <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal"><button class="btn btn-success">Book Slot</button></a>
+                              </div>
+                          </div>
+                          <div class="card-footer">
+                              <small class="text-muted">
+                                  Last updated Date: <span id="date"></span>
+                                               Time: <span id="time"></span>
+                              </small>
+                          </div>
+                          
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <div class="container-fluid">
+              <div class="row">
+                  <div class="col-12 mt-3">
+                      <div class="card">
+                          <div class="card-horizontal">
+                              <div class="img-square-wrapper">
+                                  <img class="image" src="hall1.jfif" alt="Card image cap">
+                              </div>
+                              <div class="card_body">
+                                  <h4 class="card-title">Anjana Gardens</h4>
+                                  <p class="card-text">
+                                      <i class="fas fa-location-arrow"></i> Shivaji nagar , Uppal , Hyderabad-500039<br>
+                                      <i class="fas fa-rupee-sign"></i>  50,000/-<br>
+                                      Veg & Non-Veg <br>
+                                      AC & Non-AC
+                                  </p>
+                              </div>
+                              <div class="card-buttons">
+                                      <a href="hall-view.html"><button class="btn btn-success">View More</button></a>
+                                      <a href="" data-target="#loginModal" data-toggle="modal" data-dismiss="modal"><button class="btn btn-success">Book Slot</button></a>
+                              </div>
+                          </div>
+                          <div class="card-footer">
+                              <small class="text-muted">
+                                  Last updated Date: <span id="date"></span>
+                                               Time: <span id="time"></span>
+                              </small>
+                          </div>
+                          
+                          <script type="text/javascript">
+                            /* for date and time of card view*/
+                                    var dt = new Date();
+                                    document.getElementById("date").innerHTML = dt.toLocaleDateString();
+                                    var time = new Date();
+                                    document.getElementById("time").innerHTML = dt.toLocaleTimeString();
+                          </script>
+                      </div>
+                  </div>
+
+              </div>
+          </div>    
+
+    </div>
+
+</div>
+
+
+<div class="footer" id="footer">  
+  <div>&copy; 2020 BlueCarpt </div><br>
+  <div class="contact-us">  
+      
+  </div>
+  <div>follow us on
+      <ul>
+        <li><a href="">Instagram <i class="fab fa-instagram"></i></a></li>  
+        <li><a href="">Twitter <i class="fab fa-twitter"></i></a></li>
+        <li><a href="">Facebook <i class="fab fa-facebook-f"></i></a></li>
+      </ul>
+  </div>
+
+</div>
+
+</body>
+</html>

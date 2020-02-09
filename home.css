@@ -1,0 +1,277 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family:Times New Roman;
+}
+body{
+	font-family:Times New Roman;
+	
+}
+#navbar-brand-cust{
+	font-size: 30px;
+	color:white;
+	font-weight: bold;
+	text-align:center;	
+}
+#nav-bar
+{
+background-color:#008080;
+width: 100%;
+height: 10%;
+
+}
+#signupModal , #forgetpasswordModal , #loginModal
+{
+	padding-top: 70px;
+	font-size: 20px;
+}
+@media(max-width: 500px){
+#signupModal , #forgetpasswordModal , #loginModal
+{
+	padding-top: 70px;
+	font-size: 40px;
+}
+}
+.logo
+{
+	height:50px;
+	//width:58px;
+	margin-left: 10px;
+
+}
+#nav_lists
+{
+	color: white;
+	font-family:Times New Roman;
+	
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align:center;
+
+
+}
+nav div ul li
+{
+	padding-top: 5px;
+	margin-left:15px; 
+
+}
+#navbarCollapse ul li div a , #navbarCollapse ul li div a div a
+{
+	text-transform: uppercase;
+	text-align:center;
+	font-weight: bold;
+}
+#level_1in2_drop , #level_2in2_drop 
+{
+	top: 50%;
+  left: 100%;
+  margin-top: -1px;
+}
+
+.login-btn
+{
+	border: 1px solid #25E6BA;
+    border-radius: 4px;
+  	
+}
+.signup-btn
+{
+	
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align:center;
+	background-color: #FFC300;
+	color:#010101;
+	border:1px solid #FFC300;
+	border-radius: 5px;
+}
+#profile_icon
+{
+	font-size: 30px;
+	padding-top: 0px;
+	cursor: pointer;
+}
+@media(max-width: 858px)
+{
+	#navbarCollapse ul li a ,.dropdown-menu
+	{
+		font-size: 13px;
+	}
+	#navbar-brand-cust
+	{
+		font-size: 25px;
+	}
+
+}
+
+
+												/*search box*/
+.search{
+	text-align: center;
+	margin: 40px;
+}
+.search input{
+	border: none;
+	border-bottom:1px solid black;
+	outline: none;
+	font-size: 20px;
+	
+}
+.search input::placeholder{
+	text-align: center;
+}
+
+
+													/*movable pics code*/
+#myCarousel{
+	width: 100%;
+	height: 450px;
+	padding: 20px;
+}
+@media(max-width: 500px){
+	#myCarousel{
+	width: 100%;
+	height: 250px;
+}
+}
+.carousel-item img{
+        
+      width: 100%;
+      height: 100%;
+    //padding-top:  5%;
+      padding-right:0%;
+           
+   }
+ .carousel-indicators li {
+              display: inline-block;
+              width: 10px;
+              height: 10px;
+              margin: 1px;
+              text-indent: -999px;
+              cursor: pointer;
+               background-color: #0009;
+               background-color: rgba(0,0,0,0);
+               border: 1px solid #fff;
+               border-radius: 10px;
+             //background-color: #FFFFFF;
+                   
+}
+
+.carousel-indicators li.active{
+                        background-color: #FFFFFF;
+
+}
+
+
+													/*halls details*/
+
+.card{
+	position: relative;
+}
+.card-horizontal {
+    display: flex;
+    flex: 1 1 1 auto;
+
+}
+.image{
+	width: 300px;
+	height: 180px;
+}       
+ .card_body{
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+ }
+ .card-buttons{
+  width: 50%;
+  text-align: center;
+  padding-top: 60px;
+ }
+ .card-buttons button{
+    margin-left: 50px;
+
+ }
+
+
+
+/*pup up login and sign up in 5 seconds*/
+
+.bg-pup
+    {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5);
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .pop-content-box
+    {
+      width: 400px;
+      height: 250px;
+      background-color: silver;
+      border-radius: 5px;
+      padding: 5px;
+      position: relative;
+      
+    }
+    .content1 span
+    {
+      float: right;
+      font-weight: bold;
+      width: 30px;
+      height: 30px;
+      color: white;
+    }
+    .pop-content
+    {
+      
+      padding: 80px 130px;
+      
+    }
+
+
+
+/*user profile css*/
+
+#x{
+  //background-color: pink;
+  border:1px solid silver;
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+.leftside{
+  text-align: center;
+  //background-color: skyblue;
+  border:1px solid silver ;
+  width: 30%;
+
+}
+.leftside li{
+  padding:20px;
+  color: black;
+}
+.leftside li:hover{
+  background-image: linear-gradient(rgba(0,0,0,0.07),rgba(0,0,0,0.07)); 
+
+}
+.leftside a:hover{
+  text-decoration: none;
+  
+}
+.rightside{
+  width: 70%;
+  text-align: center;
+ // background-color: white;
+  padding-left: 10%;
+}
+.rightside td{
+  padding: 10px;
+}
